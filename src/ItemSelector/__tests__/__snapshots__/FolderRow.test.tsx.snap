@@ -1,0 +1,49 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`FolderRow > should render and match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="folder-row"
+  >
+    <div
+      class="item-selector-row"
+      style="padding-left: 0px;"
+    >
+      <input
+        checked=""
+        class="item-selector-checkbox "
+        data-testid="folder-selector-checkbox-1"
+        readonly=""
+        type="checkbox"
+      />
+      <span
+        class="folder-title"
+      >
+        Audio
+      </span>
+    </div>
+    <button
+      aria-label="Collapse folder"
+      class="folder-toggle expanded"
+      data-testid="toggle-expander-1"
+      type="button"
+    >
+      <svg
+        fill="none"
+        height="12"
+        viewBox="0 0 12 12"
+        width="12"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M2.5 4.5L6 8L9.5 4.5"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="1.5"
+        />
+      </svg>
+    </button>
+  </div>
+</DocumentFragment>
+`;

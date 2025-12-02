@@ -1,0 +1,20 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Footer > should render and match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="item-selector-footer"
+  >
+    <div>
+      Selected item IDs: 
+    </div>
+    <button
+      class="clear-selection-button"
+      data-testid="clear-selection"
+      type="button"
+    >
+      Clear selection
+    </button>
+  </div>
+</DocumentFragment>
+`;

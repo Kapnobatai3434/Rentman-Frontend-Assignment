@@ -1,0 +1,22 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ItemRow > should render and match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="item-selector-row item-row"
+    style="padding-left: 16px;"
+  >
+    <input
+      class="item-selector-checkbox"
+      data-testid="item-selector-checkbox-1"
+      readonly=""
+      type="checkbox"
+    />
+    <span
+      class="item-title"
+    >
+      Sample Item
+    </span>
+  </div>
+</DocumentFragment>
+`;

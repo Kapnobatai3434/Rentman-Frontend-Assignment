@@ -1,0 +1,128 @@
+.item-selector-page {
+  display: flex;
+  flex-direction: column;
+  width: 17.1875rem;
+  color: var(--color-text);
+}
+
+.item-selector-card {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 0.5rem 0;
+  background-color: var(--color-surface);
+}
+
+.item-selector-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-selector-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+}
+
+.item-selector-row:hover {
+  background-color: var(--color-hover);
+}
+
+.item-selector-checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: 0.125rem;
+  background-color: var(--color-surface);
+  cursor: pointer;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.item-selector-checkbox:checked {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.item-selector-checkbox:checked::after {
+  content: '';
+  position: absolute;
+  left: 0.25rem;
+  top: 0.0625rem;
+  width: 0.3125rem;
+  height: 0.5625rem;
+  border: solid white;
+  border-width: 0 0.125rem 0.125rem 0;
+  transform: rotate(45deg);
+}
+
+.item-selector-checkbox.indeterminate {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.item-selector-checkbox.indeterminate::after {
+  content: '';
+  position: absolute;
+  left: 0.1875rem;
+  top: 0.375rem;
+  width: 0.5rem;
+  height: 0.125rem;
+  background-color: white;
+}
+
+.item-selector-checkbox:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.folder-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.folder-row:hover {
+  background-color: var(--color-hover);
+}
+
+.folder-row .folder-title {
+  font-weight: 600;
+}
+
+.folder-toggle {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  color: var(--color-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.15s ease;
+}
+
+.folder-toggle.expanded {
+  transform: rotate(180deg);
+}
+
+.item-selector-footer {
+  padding: var(--spacing) 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.clear-selection-button {
+  margin-left: auto;
+  padding: 0.375rem 0.5rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--color-primary);
+  background-color: var(--color-primary);
+  color: white;
+  cursor: pointer;
+  width: 7.13rem;
+}

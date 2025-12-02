@@ -1,0 +1,21 @@
+:root {
+  font-family: system-ui, "Source Sans Pro", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 16px;
+
+  --color-surface: hsl(0, 0%, 100%);
+  --color-hover: hsl(0, 0%, 96%);
+  --color-text: hsl(195, 3%, 24%);
+  --color-border: hsl(210, 0%, 89%);
+  --color-primary: hsl(213, 97%, 53%);
+  --spacing: 1rem;
+  --radius: 0.1813rem;
+
+  color: var(--color-text);
+  background-color: var(--color-surface);
+}
+
+body {
+  font-size: 0.75rem;
+}
